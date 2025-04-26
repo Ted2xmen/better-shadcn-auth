@@ -82,6 +82,30 @@ A modern authentication template for Next.js projects, featuring:
 
 ---
 
+## 🐲 Drizzle ORM Commands
+
+To manage your database schema and generate types with Drizzle ORM, use the following commands:
+
+```bash
+# Run migrations
+pnpm drizzle:migrate
+# or
+npm run drizzle:migrate
+# or
+yarn drizzle:migrate
+
+# Generate types
+pnpm drizzle:generate
+# or
+npm run drizzle:generate
+# or
+yarn drizzle:generate
+```
+
+> Make sure your Drizzle config is set up correctly in `drizzle.config.ts` and your database is accessible via `DATABASE_URL` in your `.env` file.
+
+---
+
 ## 📄 License
 
 MIT

@@ -77,7 +77,7 @@ export default function LandingPage() {
         </div>
       </main>
       <footer className="mt-16 flex gap-6 flex-wrap items-center justify-center text-xs text-muted-foreground">
-        <a href="https://github.com/tugrulerdem/better-shadcn-auth" target="_blank" rel="noopener noreferrer" className="hover:underline">View on GitHub</a>
+        <a href="https://github.com/ted2xmen/better-shadcn-auth" target="_blank" rel="noopener noreferrer" className="hover:underline">View on GitHub</a>
         <span>•</span>
         <span> {new Date().getFullYear()} better-auth template</span>
       </footer>
