@@ -4,6 +4,7 @@ A modern authentication template for Next.js projects, featuring:
 
 - **Next.js** — The React framework for production
 - **shadcn/ui** — Beautifully designed UI components
+- **react-query** - Data fetching and state management
 - **NeonDB** — Serverless Postgres database
 - **better-auth** — Simple, secure authentication
 - **Drizzle ORM** — Type-safe SQL for TypeScript
@@ -42,6 +43,9 @@ A modern authentication template for Next.js projects, featuring:
    BETTER_AUTH_SECRET=
    BETTER_AUTH_URL=
    DATABASE_URL=
+   ANALYTICS_URL=
+   ANALYTICS_ID=
+   NEXT_PUBLIC_SITE_URL=
    ```
 
 4. **Run the development server:**

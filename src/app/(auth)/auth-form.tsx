@@ -6,7 +6,6 @@ import { Label } from "@/components/ui/label"
 import Link from "next/link"
 import { routes } from "@/lib/config"
 import { signIn, signUp } from "@/actions/auth.action"
-import Image from "next/image"
 import PasswordInput from "@/components/inputs/password-input"
 
 const modeDataHandler = {

@@ -13,3 +13,17 @@ export const routes: Record<string, string> = {
       icon: Home,
     },
   ];
+
+  export const searchMenu = [
+    {
+      heading: "Navigation",
+      items: [
+        {
+          icon: Home,
+          label: "Go to Home",
+          onClick: () => (window.location.href = routes.home),
+        },
+      ],
+    },
+  ];
+  

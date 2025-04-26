@@ -14,10 +14,8 @@ import {
 } from "@/components/ui/sidebar"
 import { User } from "better-auth"
 
-
-
 export function SidebarRight({
-  user, 
+  user,
   ...props
 }: React.ComponentProps<typeof Sidebar> & { user: User | null }) {
 
@@ -27,11 +25,11 @@ export function SidebarRight({
       className="sticky top-0 hidden h-svh border-l lg:flex"
       {...props}
     >
-      <SidebarHeader className="border-sidebar-border h-16 border-b">
+      <SidebarHeader className="h-16">
         <NavUser user={user} />
       </SidebarHeader>
       <SidebarContent>
-     
+
         <SidebarSeparator className="mx-0" />
       </SidebarContent>
       <SidebarFooter>
