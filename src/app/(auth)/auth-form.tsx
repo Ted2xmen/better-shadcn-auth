@@ -7,6 +7,7 @@ import Link from "next/link"
 import { routes } from "@/lib/config"
 import { signIn, signUp } from "@/actions/auth.action"
 import Image from "next/image"
+import PasswordInput from "@/components/inputs/password-input"
 
 const modeDataHandler = {
   login: {
@@ -93,18 +94,7 @@ function AuthFormFields({ mode }: { mode: "login" | "register" }) {
         <Input id="email" name="email" type="email" placeholder="m@example.com" required />
       </div>
       <div className="grid gap-3">
-        <div className="flex items-center">
-          <Label htmlFor="password">Password</Label>
-          {mode === "login" && (
-            <a
-              href="#"
-              className="ml-auto text-xs underline-offset-2 hover:underline"
-            >
-              Forgot your password?
-            </a>
-          )}
-        </div>
-        <Input id="password" name="password" type="password" required />
+        <PasswordInput id="password" showStrength={mode === "register"} />
       </div>
     </>
   )
@@ -178,11 +168,12 @@ function AuthFormTerms() {
 function AuthFormImage() {
   return (
     <div className="bg-muted relative hidden md:block">
-      <Image
+      <div className="h-full w-full bg-stone-800"></div>
+      {/* <img
         src="/placeholder.svg"
         alt="Image"
         className="absolute inset-0 h-full w-full object-cover dark:brightness-[0.2] dark:grayscale"
-      />
+      /> */}
     </div>
   )
 }

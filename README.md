@@ -113,6 +113,7 @@ MIT
 ---
 
 ## 🙏 Credits
+- [originui](https://originui.com/)
 - [shadcn/ui](https://ui.shadcn.com/)
 - [better-auth](https://www.better-auth.com)
 - [NeonDB](https://neon.tech/)
